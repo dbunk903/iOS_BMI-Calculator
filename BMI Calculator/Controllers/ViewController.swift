@@ -11,7 +11,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func heightSliderChanged(_ sender: UISlider) {
+        print(sender.value)
+    }
+    
+    @IBAction func weightSliderChanged(_ sender: UISlider) {
+        print(sender.value)
+    }
+    
 
 }
 
