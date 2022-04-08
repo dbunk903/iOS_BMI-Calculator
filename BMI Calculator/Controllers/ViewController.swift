@@ -14,15 +14,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func heightSliderChanged(_ sender: UISlider) {
-        heightLabel.text = String(format:"%.2f",sender.value)
-        print("height is",heightLabel.text!)
-
+        let height = String(format:"%.2f", sender.value)
+        heightLabel.text = "\(height)m"
     }
     
     @IBAction func weightSliderChanged(_ sender: UISlider) {
-        weightLabel.text = String(format: "%.0f",sender.value)
-        print("weight is ",weightLabel.text!)
-        // Could just do Int(sender.value)
+        let weight = String(format: "%.0f", sender.value)
+        weightLabel.text = "\(weight)Kg"
     }
 
 }
