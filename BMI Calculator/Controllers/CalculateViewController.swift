@@ -9,8 +9,6 @@ class CalculateViewController: UIViewController {
     
     var calculatorBrain = CalculatorBrain()
     
-    
-
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
     @IBOutlet weak var heightSlider: UISlider!
@@ -50,6 +48,6 @@ class CalculateViewController: UIViewController {
     
     
     
-
+    
 }
 
