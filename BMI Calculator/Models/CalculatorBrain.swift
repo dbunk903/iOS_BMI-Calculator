@@ -9,16 +9,23 @@ import Foundation
 
 struct CalculatorBrain {
     
-    var bmi: Float?
+    var bmi: BMI?
     
     func getBMIValue() -> String{
-        let bmiTo1DecimalPlace = String(format: "%.1f", bmi ?? 0.0)
+        let bmiTo1DecimalPlace = String(format: "%.1f", bmi?.value ?? 0.0)
         return bmiTo1DecimalPlace
     }
     
     
     mutating func calculateBMI (height:Float, weight:Float){
-        bmi = weight / pow(height, 2)
+        let bmiValue = weight / pow(height, 2)
+        if bmiValue < 18.5{
+            print("underweight")
+        }else if bmiValue < 24.9 {
+            print("normal weight")
+        }else {
+            print("overweight")
+        }
     }
     
     
